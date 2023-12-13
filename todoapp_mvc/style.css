@@ -1,0 +1,110 @@
+
+
+html, body, ul, li, ol {
+    outline : 0;
+    padding : 0;
+    margin : 0;
+    list-style: none;
+}
+
+.app-container {
+    text-align: center;
+    margin: 0 auto;
+    width: 640px;
+    flex-direction: column;
+    display: flex;
+}
+
+.todo-container {
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.todo-name {
+    padding: 16px 0px 16px 0px;
+    text-indent: 60px;;
+    left: 60px;
+    box-shadow: inset 0 -2px 1px rgba( 0, 0, 0, 0.03);
+}
+
+.todo-list-container {
+    border: 1px solid #ededed;
+    width: 100%;
+    padding: 0;
+    font-size: 22px;
+    text-align: left;
+}
+
+.todo-list-container li {
+    position: relative;
+    border-bottom: 1px solid #ededed;
+    display: flex;
+    flex-direction: row;
+}
+
+.todo-list-container li input {
+    height: 40px;
+    width: 40px;
+}
+
+.todo-list-container li label {    
+    overflow: scroll;
+    max-width: 480px;
+    position: absolute;
+    padding: 8px 15px 5px 15px;
+    word-wrap: break-word;
+    margin-left: 45px;
+    font-size: 32px;
+    height: 32px;
+    line-height: 32px;
+    transition: color 0.4s;
+}
+
+.todo-list-container li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggle-container {
+    position: absolute;
+    top : 15px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 34px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.todo-name {
+    width: 100%;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+    height: 0;
+}
+
+.done {
+    text-decoration:line-through;
+}
+
+button {
+    background : transparent;
+    font-size: 22px;
+}
+
+.todo-footer, .todo-footer ul {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ededed;
+    height: 32px;
+    
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="app-container">
+        <h1>
+            Todo App With MVC
+        </h1>
+        <div class="todo-container">
+            <section class="toggle-container">
+                <h2>
+                    &darr;
+                </h2>
+            </section>
+            <input type="text" class="todo-name" placeholder="What needs to be done?" />
+            <ul class="todo-list-container">
+
+            </ul>
+            <ul class="todo-footer">
+                <li class="todo-count"></li>
+                <li>
+                    <ul>
+                        <li>
+                            <button class="show-all-btn">
+                                All
+                            </button>
+                        </li>
+                        <li>
+                            <button class="show-active-btn">
+                                Active
+                            </button>
+                        </li>
+                        <li>
+                            <button class="show-complete-btn">
+                                Completed
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="clear-btn">
+                        Clear Completed
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
